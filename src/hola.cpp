@@ -1,11 +1,6 @@
 #include <iostream>
 #include <string>
-
-std::string hello(std::string s)
-{
-	return "hello world " + s;
-}
-
+#include "hola.hpp"
 
 int main(int argc, char **argv)
 {
