@@ -5,7 +5,7 @@ platform: x64
 install:
 - cmd: nuget install boost
 before_build:
-- cmd: cmake -G"Visual Studio 14 2015 Win64" -Bc:/projects/holaWorld/build -Hc:/projects/holaWorld -DBOOST_INCLUDEDIR:STRING="C:\projects\tiredepth\boost.1.63.0.0\lib\native\include\"
+- cmd: cmake -G"Visual Studio 14 2015 Win64" -Bc:/projects/holaWorld/build -Hc:/projects/holaWorld -DBOOST_INCLUDE_DIR:STRING="C:\projects\tiredepth\boost.1.63.0.0\lib\native\include\"
 build:
   project: build\holaWorl.sln
   verbosity: normal
