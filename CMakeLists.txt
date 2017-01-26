@@ -4,6 +4,11 @@ project(hola)
 
 enable_testing()
 
+
+set(CMAKE_BUILD_TYPE Release)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 #Boost unit test framework
 find_package(Boost REQUIRED)
 
