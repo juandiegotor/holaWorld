@@ -8,10 +8,10 @@ before_build:
 - cmd: cmake -G"Visual Studio 14 2015 Win64" -Bc:/projects/holaWorld/build -Hc:/projects/holaWorld -DBOOST_INCLUDEDIR:STRING="C:\projects\holaWorld\boost.1.63.0.0\lib\native\include\"
 
 build:
-  project: C:projects/holaWorld/build/holaWorld.sln
+  project: C:projects/holaworld/build/holaworld.sln
   verbosity: normal
 test_script: 
 - ctest -VV -C Debug 
 artifacts:
-- path: build\Debug\holaWorld.exe
-  name: holaWorld
+- path: build\Debug\holaworld.exe
+  name: holaworld
